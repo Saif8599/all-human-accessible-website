@@ -26,7 +26,7 @@ Beantwoord onderstaande vragen op het whiteboard:
 
 - Onderzoek met je tafel welke functionaliteiten _verschillende browsers_ je geven bij zo'n link. Gebruik je rechtermuisknop, doe een _long tap_ op je telefoon, gebruik de Shift-, Control-, Command-, Option- en Alt-toetsen (of een combinatie van die toetsen) bij het klikken op die link.
 
-- Voeg het `download` attribuut toe, en onderzoek wat er met de functionaliteit in de browser verandert.
+- Voeg het `download` attribuut toe, en onderzoek wat er met de functionaliteit in de browser verandert. (Dit attribuut werkt niet in elke browser lokaal, in Firefox bijvoorbeeld wel.)
 
 - Verander het `download` attribuut naar `target="_blank"`, en onderzoek wat er met de functionaliteit in de browser verandert, als je op de link klikt.
 
@@ -98,7 +98,7 @@ Maak een nieuwe subkop aan, `<h2>Labels voor invoervelden</h2>`, plak de volgene
 
 De UX is verschrikkelijk. Lighthouse klaagt er ook over. WCAG audit niet gehaald. Helaas.
 
-Wat nou als je om elke `<input>` én elke docent een `<label>...</label>` zet? (💡 Pro-tip: zoek uit hoe _multi-cursor editing_ in je editor werkt, want daar ga je veel plezier van hebben.) Test je wijzigingen.
+Wat nou als je elke `<input>` én elke docent samen in één `<label>...</label>` zet? (💡 Pro-tip: zoek uit hoe _multi-cursor editing_ in je editor werkt, want daar ga je veel plezier van hebben.) Test je wijzigingen.
 
 Een paar vliegen in één klap: je hebt de UX voor _alle_ gebruikers verbeterd, Lighthouse klaagt wat minder, en die WCAG checklist is zo ook wel te doen. Leer jezelf aan om bij elke `<input>` een `<label>` te koppelen. Niet alleen bij checkboxjes, maar bij _alle_ invoervelden.
 
