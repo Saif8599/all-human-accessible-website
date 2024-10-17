@@ -88,7 +88,7 @@ nav ul li {
 .nav-item a {
   font-size: 1em;
   text-decoration: none;
-  color: #F0E5E9;
+  color: #f0e5e9;
 }
 
 .nav-item a:hover {
@@ -121,6 +121,7 @@ main {
   align-items: center;
 
   @media (min-width: 600px) {
+    flex-direction: row-reverse;
     margin-bottom: 49px;
   }
 }
@@ -130,8 +131,12 @@ main {
   padding: 15px;
   border: 1px solid #ccc;
   border-left: none;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px 0px 0px 5px;
   outline: none;
+  @media (min-width: 600px) {
+    border-radius: 0 5px 5px 0 ;
+    border-left: none;
+  }
 }
 
 .search-bar button {
@@ -141,6 +146,18 @@ main {
   border-left: none;
   background-color: #6a0025;
   cursor: pointer;
+  @media (min-width: 600px) {
+    background-color: #ffffff;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    border-right: none;
+  }
+}
+.search-bar button svg {
+  @media (min-width: 600px) {
+    fill: #1f000b;
+    padding: 0px 5px;
+  }
 }
 
 /* Webinar Overview*/
@@ -282,7 +299,7 @@ footer > a:first-of-type {
     overflow: hidden;
     text-overflow: ellipsis;
     display: block;
-    }
+  }
 }
 
 footer a {
