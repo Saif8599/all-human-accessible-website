@@ -6,23 +6,22 @@ Je hebt maandag gezien dat Mensen (waar deze sprint om draait) veel verschillend
 
 Als frontender heb je de verantwoordelijkheid om een goede gebruikerservaring voor eindgebruikers neer te zetten. Goede HTML helpt bij die goede _User Experience (UX)_. En slechte HTML zorgt voor een slechte gebruikerservaring. Dat klinkt logisch, maar het Internet (en ook ChatGPT) staat vol met voorbeelden van slechte HTML.
 
-
 ### Aanpak
 
 Voordat je kunt bepalen wat goede HTML is, moet je vooral leren wat HTML zoal kan. En welke functionaliteiten je van de browser gratis krijgt, als je de juiste HTML elementen schrijft.
 
-Vandaag ga je lezen en leren wat verschillende (interactieve) HTML elementen in een browser doen: links, afbeeldingen, labels, details en headings. Studenten die al wat verder zijn, kunnen ook experimenteren met popups.
+Vandaag ga je lezen en leren wat verschillende (interactieve) HTML elementen in een browser doen: links, afbeeldingen, labels, headings en details. Studenten die al wat verder zijn, kunnen ook experimenteren met popups.
 
-Open je code editor en schrijf je favoriete HTML element op het whiteboard, zodat we kunnen beginnen.
+Open je code editor en maak een blanco HTML pagina in je editor, noem deze `ux.html` en sla deze op in de repo van je leertaak. Begin met een `<h1>UX in HTML</h1>` en een paragraf met daarin je favoriete HTML element `<p>Mijn favoriete HTML element is ...</p>`. Schrijf dit ook op het whiteboard, zodat we kunnen beginnen.
 
 
 ### Links
 
 De allereerste browser ooit, zo'n 30 jaar geleden, kon al met links (_anchors_, `<a href="...">`) overweg. Sindsdien is er alleen maar leuk spul bijgekomen in HTML.
 
-Maak een blanco HTML pagina in je editor, noem deze `ux.html` en sla deze op op je Bureaublad. Begin met een `<h1>UX in HTML</h1>` en maak een eerste subkop, `<h2>Links</h2>`. Schrijf daaronder een simpele `<a href="ux.html">UX in HTML<a>` link (naar zichzelf dus), en open de pagina in een willekeurige browser.
+Maak een eerste subkop in je HTML document, `<h2>Links</h2>`. Schrijf daaronder een simpele link (naar zichzelf) `<a href="ux.html">UX in HTML<a>` en open de pagina in een willekeurige browser.
 
-Beantwoord onderstaande vragen op het whiteboard:
+#### Beantwoord onderstaande vragen op het whiteboard:
 
 - Onderzoek met je tafel welke functionaliteiten _verschillende browsers_ je geven bij zo'n link. Gebruik je rechtermuisknop, doe een _long tap_ op je telefoon, gebruik de Shift-, Control-, Command-, Option- en Alt-toetsen (of een combinatie van die toetsen) bij het klikken op die link.
 
@@ -34,7 +33,7 @@ Beantwoord onderstaande vragen op het whiteboard:
 
 - Voeg meerdere `<a href="...">` links toe aan je HTML, en probeer met alleen je toetsenbord de links te bereiken en te volgen. Wat is de standaard tabvolgorde?
 
-- Je kunt met een `<a href="#deel-2">` ook linken naar verschillende onderdelen binnen dezelfde pagina (bijvoorbeeld `<section id="deel-2">`). Met `:target` kun je daar in CSS wat mee doen.
+- Je kunt met een `<a href="#deel-2">` ook linken naar verschillende onderdelen binnen dezelfde pagina door naar een `id` te verwijzen, bijvoorbeeld `<section id="deel-2">`. Met de pseudo-selector`:target` kun je daar in CSS wat mee doen.
 
 Met zoiets simpels als een link kun je al alle kanten op. <!-- Hrhr --> Wil je de eindgebruiker dus de mogelijkheid geven om ergens _heen_ te gaan, gebruik dan een `<a>` (_anchor_). En dus geen `<button>`, want daarbij krijg je niet die functionaliteit van een browser.
 
@@ -46,7 +45,6 @@ Met zoiets simpels als een link kun je al alle kanten op. <!-- Hrhr --> Wil je d
 - [Het `target` attribuut](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#target)
 - [De `:target` selector in CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/:target)
 
-
 ### Afbeeldingen
 
 Door foto's, logo's en andere visuele afbeeldingen toe te voegen in HTML, maken we het meteen ingewikkeld. Niet iedere browser kan namelijk de afbeeldingen downloaden, en niet ieder mens kan überhaupt _zien_. In HTML willen we met die gebruikerservaring ook rekening houden.
@@ -55,7 +53,7 @@ Voeg in jouw `ux.html` de volgende subkop toe, `<h2>Afbeeldingen</h2>`. We hebbe
 
 De afbeelding kan nog niet gedownload worden, dus de browser tekent hier ook geen pixels.
 
-Beantwoord onderstaande vragen op het whiteboard:
+#### Beantwoord onderstaande vragen op het whiteboard:
 
 - Voeg `alt="UX in HTML"` toe aan de `<img>` tag, en bekijk het in je browser. Welke UX vinden jullie beter als de afbeelding niet getoond kan worden?
 
@@ -76,7 +74,7 @@ Nu weet je waarom je altijd na moet denken over de inhoud van je `alt` attribute
 
 Bij het maken van formulieren, voor bijvoorbeeld filters of zoekvelden, kun je verschillende invoervelden gebruiken. Denk aan een lijst met checkboxes of radios. Voor formulieren hangt een goede UX onder andere af van goede labels.
 
-Maak een nieuwe subkop aan, `<h2>Labels voor invoervelden</h2>`, plak de volgene HTML eronder, en test het in je browser door verschillende docenten aan te klikken.
+Maak een nieuwe subkop aan, `<h2>Labels voor invoervelden</h2>`, plak de volgende HTML eronder, en test het in je browser door verschillende docenten aan te klikken.
 
 ```html
 <fieldset>
@@ -96,13 +94,17 @@ Maak een nieuwe subkop aan, `<h2>Labels voor invoervelden</h2>`, plak de volgene
 </fieldset>
 ```
 
-De UX is verschrikkelijk. Lighthouse klaagt er ook over. WCAG audit niet gehaald. Helaas.
+De UX van deze HTML verschrikkelijk. Lighthouse klaagt er ook over. WCAG audit niet gehaald ... Helaas ...
 
-Wat nou als je elke `<input>` én elke docent samen in één `<label>...</label>` zet? (💡 Pro-tip: zoek uit hoe _multi-cursor editing_ in je editor werkt, want daar ga je veel plezier van hebben.) Test je wijzigingen.
+#### Beantwoord onderstaande vragen op het whiteboard:
+
+- Doe een Lighthouse test op de HTML met input en labels. Welke melding krijg je van de test?
+
+- Wat nou als je elke `<input>` én elke docent samen in één `<label>` zet? Dat ziet er zo uit: `<label><input type="checkbox">Naam</label>`. Test de wijzigingen, welke UX vinden jullie beter?.
 
 Een paar vliegen in één klap: je hebt de UX voor _alle_ gebruikers verbeterd, Lighthouse klaagt wat minder, en die WCAG checklist is zo ook wel te doen. Leer jezelf aan om bij elke `<input>` een `<label>` te koppelen. Niet alleen bij checkboxjes, maar bij _alle_ invoervelden.
 
-Test dit maar in je browser:
+- Zonder labels is het voor _iedereen_ ontoegankelijk en onbruikbaar, omdat je geen idee hebt wat je waar moet invullen. Voeg onderstaande code toe aan je HTML document en test het in je browser, werkt dit goed? Weet een gebruiker wat die moet invullen?
 
 ```html
 <fieldset>
@@ -114,9 +116,7 @@ Test dit maar in je browser:
 </fieldset>
 ```
 
-Zonder labels is het voor _iedereen_ ontoegankelijk en onbruikbaar, omdat je geen idee hebt wat je waar moet invullen.
-
-Plak het volgende voorbeeld onder je code, zodat je het kunt vergelijken.
+- Plak het volgende voorbeeld onder je code, zodat je het kunt vergelijken. Wat is het verschil tussen de twee voorbeelden?
 
 ```html
 <fieldset>
@@ -128,9 +128,7 @@ Plak het volgende voorbeeld onder je code, zodat je het kunt vergelijken.
 </fieldset>
 ```
 
-Als we wél de tekstuele labels toevoegen, maar _niet_ de `<label>` elementen, blijft het voor een deel van je eindgebruikers ontoegankelijk en onbruikbaar. En HTML schrijf je voor _iedereen_.
-
-Je wilt het dus als volgt doen. Plak dit onder je code, zodat je beide versies kunt vergelijken.
+- Als we wél de tekstuele labels toevoegen, maar _niet_ de `<label>` elementen, blijft het voor een deel van je eindgebruikers ontoegankelijk en onbruikbaar. En HTML schrijf je voor _iedereen_. Plak dit onder je code, zodat je beide versies kunt vergelijken. Test de verschillen, welke UX vinden jullie beter?.
 
 ```html
 <fieldset>
@@ -142,7 +140,7 @@ Je wilt het dus als volgt doen. Plak dit onder je code, zodat je beide versies k
 </fieldset>
 ```
 
-Bijkomend voordeel is dat je nu ook op het label kunt klikken, en dat je met CSS meer kunt doen. Omdat je een goed HTML fundament hebt geschreven. Plak deze HTML/CSS onderaan in je `ux.html` om het te testen.
+- Een bijkomend voordeel is dat je nu ook op het label kunt klikken, en dat je met CSS meer kunt doen. Omdat je een goed HTML fundament hebt geschreven. Plak deze HTML/CSS onderaan in je `ux.html` om het te testen.
 
 ```html
 <style>
@@ -152,7 +150,7 @@ input:hover, input:focus {
 </style>
 ```
 
-Stel dat een invoerveld verplicht is, wat zou je dan doen? Bespreek met je tafel hoe je dit voor meerdere eindgebruikers, browsers en apparaten kunt doen, en schrijf wat hints op het whiteboard.
+- Stel dat een invoerveld verplicht is, wat zou je dan doen? Bespreek met je tafel hoe je dit voor meerdere eindgebruikers, browsers en apparaten kunt doen, en schrijf wat hints op het whiteboard.
 
 #### Bronnen
 
@@ -162,13 +160,29 @@ Stel dat een invoerveld verplicht is, wat zou je dan doen? Bespreek met je tafel
 - [De `:required` selector in CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/:required)
 
 
+### Headings
+
+Door je content een goede heading structuur te geven, zorg je dat bijvoorbeeld _Inhoudsopgaves_ automatisch gemaakt kunnen worden. Sommige browsers en tools bieden deze functionaliteit aan eindgebruikers.
+
+#### Beantwoord onderstaande vragen op het whiteboard:
+
+- Onderzoek met je tafel hoe je de heading structuur van je UX pagina kunt laten zien of voorlezen door een tool. Gebruik hiervoor bijvoorbeeld de screen reader die je geïnstalleerd hebt, zoek een browser extensie die een “table of contents” kan weergeven, of installeer een browser zoals Polypane.
+
+#### Bronnen
+
+- [`<h1>`–`<h6>`: The HTML Section Heading elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
+- [Gebruik de tools binnen Polypane om de toegankelijkheid en bruikbaarheid te testen](https://polypane.app/) (gratis voor studenten, via de [GitHub Student Developer Pack](https://polypane.app/github-students/))
+
+
 ### Meer informatie en accordeons (_progressive disclosure_)
 
 Soms wil je een deel van de informatie op een pagina verbergen en pas later tonen. Misschien maak je wel een lijst met Veelgestelde vragen, maar wil je dat er steeds maar één vraag openstaat.
 
-Zoek op het Internet—of vraag ChatGPT—hoe je een accordeon kunt maken met HTML, CSS en JS. Je gaat verschillende tutorials en meningen vinden. Schrijf met je tafel wat verschillende manieren op het whiteboard, en of deze een elegante UX opleveren. Test bijvoorbeeld met je toetsenbord hoe ze te bedienen zijn.
+#### Beantwoord onderstaande vragen op het whiteboard:
 
-In HTML kun je het `<details>` element gebruiken voor dit soort _widgets_. Kopieer het volgende en onderzoek wat het je voor UX geeft:
+- Zoek op het Internet—of vraag ChatGPT—hoe je een accordeon kunt maken met HTML, CSS en JS. Je gaat verschillende tutorials en meningen vinden. Schrijf met je tafel wat verschillende manieren op het whiteboard, en of deze een elegante UX opleveren. Test bijvoorbeeld met je toetsenbord hoe ze te bedienen zijn.
+
+- In HTML kun je het `<details>` element gebruiken voor dit soort _widgets_. Kopieer onderstaande code naar je HTML document en onderzoek wat het je voor UX geeft:
 
 ```html
 <details>
@@ -178,7 +192,7 @@ In HTML kun je het `<details>` element gebruiken voor dit soort _widgets_. Kopie
 </details>
 ```
 
-HTML biedt je ook iets voor accordeons, waarbij slechts één element openstaat. Experimenteer met onderstaande code, en onderzoek hoe de UX is, door je toetsenbord te gebruiken.
+- HTML biedt je ook iets voor accordeons, waarbij slechts één element openstaat. Experimenteer met onderstaande code, en onderzoek hoe de UX is, door je toetsenbord te gebruiken.
 
 ```html
 <details name="faq">
@@ -248,13 +262,3 @@ dialog::backdrop {
 - Wat geavanceerder: [de `showModal()` method in JS](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal), voor als je je popup _modal_ wilt maken
 
 
-### Headings
-
-En door je content een goede heading structuur te geven, zorg je dat bijvoorbeeld _Inhoudsopgaves_ automatisch gemaakt kunnen worden. Sommige browsers en tools bieden deze functionaliteit aan eindgebruikers.
-
-Onderzoek met je tafel hoe je de heading structuur van je UX pagina kunt laten zien of voorlezen door een tool. Gebruik hiervoor bijvoorbeeld de screen reader die je geïnstalleerd hebt, zoek een browser extensie die een “table of contents” kan weergeven, of installeer een browser zoals Polypane.
-
-#### Bronnen
-
-- [`<h1>`–`<h6>`: The HTML Section Heading elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
-- [Gebruik de tools binnen Polypane om de toegankelijkheid en bruikbaarheid te testen](https://polypane.app/) (gratis voor studenten, via de [GitHub Student Developer Pack](https://polypane.app/github-students/))
