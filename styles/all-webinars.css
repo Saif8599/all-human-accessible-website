@@ -177,6 +177,14 @@ main {
   }
 }
 
+.select-options {
+  font-size: 1em;
+  font-weight: 700;
+  color: #6A0025;
+  background-color: #d2b2bd;
+  border:0px;
+  outline:0px;}
+
 .webinar-overview-header {
   display: flex;
   justify-content: space-between;
@@ -274,12 +282,12 @@ main {
   gap: 15px;
   margin-bottom: 80px;
   @media (min-width: 600px) {
-    grid-template-columns: repeat(auto-fit, minmax(30% , 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     gap: 20px;
     margin-bottom: 50px;
   }
   @media (min-width: 1000px) {
-    grid-template-columns: repeat(auto-fit, minmax(20% , 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
   }
 }
 
