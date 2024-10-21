@@ -248,6 +248,8 @@ main {
   justify-content: flex-start;
   white-space: nowrap;
   margin-top: 15px;
+  color: #1F000B;
+  font-weight: 700;
   overflow-x: auto; /* Dit zorgt ervoor dat je kan scrollen als het overflowt*/
   @media (min-width: 600px) {
     margin-bottom: 50px;
