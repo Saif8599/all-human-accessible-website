@@ -98,7 +98,7 @@ nav ul li {
 .nav-item a {
   font-size: 1em;
   text-decoration: none;
-  color: #f0e5e9;
+  color: #000000;
 }
 
 .nav-item a:hover {
@@ -229,7 +229,7 @@ main {
 .featured-webinar .speaker-name {
   font-size: 1em;
   margin-top: -15px;
-  color: #555;
+  color: #000000;
 }
 
 .webinar-media-container {
@@ -313,7 +313,7 @@ main {
 .webinar-item p {
   font-size: 1em;
   margin-top: -15px;
-  color: #555;
+  color: #000000;
 }
 
 .webinar-actions {
@@ -334,7 +334,7 @@ main {
     padding: 5px;
     border-radius: 5px;
     background-color: #6a002580;
-    color: #f0e5e9;
+    color: #ffffff;
     text-decoration: none;
   }
 }
@@ -372,7 +372,7 @@ footer > a:first-of-type {
   /* Target alleen de eerste a child van footer */
   @media (min-width: 600px) {
     font-weight: 400;
-    color: #747474;
+    color: #ffffff;
     align-self: center;
     width: 100%;
     white-space: nowrap;
