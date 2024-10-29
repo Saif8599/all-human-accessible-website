@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/all-webinars.css" />
+    <title>webinar detail page</title>
+  </head>
+  <body>
+    <main>
+      <!-- Webinar Video -->
+      <section class="webinar-video">
+        <video class="webinar-video-player" controls>
+          <!-- Video source-->
+        </video>
+        <div class="webinar-video-details">
+          <h1 class="webinar-video-title">26th Faro Webinar: 1</h1>
+          <p class="webinar-video-views">1,234 views</p>
+          <time datetime="2024-10-24" class="webinar-video-date"
+            >Oct 24, 2024</time
+          >
+          <div class="webinar-video-subject">
+            <a href="#" tabindex="0" class="webinar-subject-link"
+              >Gynaecology</a
+            >
+          </div>
+        </div>
+        <button class="webinar-video-transcript-button">Read Transcript</button>
+      </section>
+
+      <!-- Webinar Description -->
+      <section class="webinar-description">
+        <p class="webinar-description-text">
+          This is the webinar description. It gives an overview of the topics
+          discussed.
+        </p>
+        <button class="webinar-description-button">Read More</button>
+      </section>
+
+      <!-- Chapters -->
+      <section class="chapters">
+        <h2 class="chapters-header">Chapters</h2>
+        <!-- Chapter list-->
+      </section>
+
+      <!-- About the Speaker -->
+      <section class="speaker">
+        <div class="speaker-profile">
+          <img class="speaker-image" src="speaker.jpg" alt="Speaker Name" />
+          <div>
+            <p class="speaker-name">John Doe</p>
+            <p class="speaker-role">Webinar Host</p>
+          </div>
+          <a href="#" class="speaker__profile-link">See Speaker Profile</a>
+        </div>
+      </section>
+
+      <!-- Resources Section -->
+      <section class="resources">
+        <h2>Resources</h2>
+        <article class="resources_item">
+          <div class="resources-icon">📄</div>
+          <h3 class="resources-title">Resource Title</h3>
+          <p class="resources-size">3.2 MB</p>
+          <div class="resources-actions">
+            <button class="resources-watch-button">Watch</button>
+            <button class="resources-download-button">Download</button>
+          </div>
+        </article>
+      </section>
+
+      <!-- Q&A Section -->
+      <section class="qna">
+        <h2>Questions and Answers</h2>
+        <form class="qna-reply-bar">
+          <label for="reply">Type a reply</label>
+          <input id="reply" type="text" placeholder="Type your reply..." />
+        </form>
+        <article class="qna-item">
+          <div class="qna-question">
+            <strong>Person 1:</strong> What is the topic of this webinar?
+          </div>
+          <div class="qna-answer">
+            <strong>Speaker:</strong> The webinar covers web development topics.
+          </div>
+        </article>
+      </section>
+
+      <!-- Watch Next -->
+      <section class="watch-next">
+        <h2>Watch Next</h2>
+        <article class="watch-next-item">
+          <img
+            class="watch-next-webinar-image"
+            src="webinar.jpg"
+            alt="webinar Name"
+          />
+          <div>
+            <p class="watch-next-webinar-titel"></p>
+            <p class="watch-next-webinar-speaker">John Doe</p>
+          </div>
+          <a href="#">Suggested Webinar 1</a>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
