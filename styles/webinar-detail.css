@@ -106,9 +106,331 @@ nav ul li {
   font-weight: 700;
 }
 
+/* Webinar Video */
 
+.webinar-video {
+  margin-bottom: 30px;
+}
+.webinar-video h1 {
+  font-size: 2em;
+  color: #1f000b;
+  margin-bottom: 30px;
+}
+
+.webinar-video-player {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+.webinar-video-title {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.webinar-videodata {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: #964c66;
+}
+
+.webinar-video-subject {
+  margin-bottom: 30px;
+}
+
+.webinar-video-subject a {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #f0e5e9;
+  background-color: #1f000b;
+  text-decoration: none;
+}
+
+.webinar-video-transcript-button {
+  width: 100%;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 10px 0;
+  border-radius: 5px;
+  color: #6a0025;
+  background-color: #e1ccd3;
+}
+
+/* Webinar description */
+
+.webinar-description {
+  margin-bottom: 15px;
+}
+
+.webinar-description-title {
+  font-size: 1.2em;
+}
+
+.webinar-description-button {
+  font-size: 1em;
+  border-radius: 5px;
+  padding: 5px 30px;
+  color: #f0e5e9;
+  background-color: #6a0025;
+  border: none;
+}
+
+/* Chapters */
+
+.chapters {
+  margin-bottom: 15px;
+}
+
+.chapter-title {
+  font-size: 1.2em;
+}
+
+.chapter-images {
+  margin-bottom: 15px;
+}
+
+.chapter-images img {
+  width: 200px;
+  height: 200px;
+}
+
+.chapter-list {
+  display: none;
+}
+
+/* About the Speaker */
+
+.speaker {
+  margin-bottom: 15px;
+}
+
+.speaker-title {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.speaker-profile {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+}
+
+.speaker-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.speaker-details {
+  text-align: left;
+}
+
+.speaker-name {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  color: #1f000b;
+}
+
+.speaker-role {
+  font-size: 14px;
+  color: #1f000b;
+  margin: 2px 0 0 0;
+}
+
+.speaker-profile-link {
+  margin-left: auto;
+  font-size: 14px;
+  color: #6a0025;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.speaker-profile-link:hover {
+  text-decoration: underline;
+}
+
+/* Resources */
+
+.resources {
+  margin-bottom: 15px;
+}
+
+.resources h2 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.resources-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.resources-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #6a0025;
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.resources-title {
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 0;
+  color: #1f000b;
+}
+
+.resources-size {
+  font-size: 14px;
+  color: #1f000b;
+  margin: 2px 0 0 0;
+}
+
+.resources-actions {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.resources-watch-button,
+.resources-download-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.resources-watch-button,
+.resources-download-button {
+  background-color: #6a0025;
+}
+
+.resources-watch-button:hover,
+.resources-download-button:hover {
+  opacity: 0.9;
+}
+
+/* Q&A */
+
+.qna {
+  margin-bottom: 15px;
+}
+
+.qna h2 {
+  font-size: 1.2em;
+  color: #6a0025;
+}
+
+.qna-reply-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.qna-reply-bar label {
+  display: none;
+}
+.qna-input {
+  flex-grow: 1;
+  font-size: 0.8em;
+  background-color: #e1ccd3;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.qna-input:focus {
+  border-color: #6a0025;
+}
+
+.qna-submit-button {
+  font-size: 16px;
+  padding: 10px 15px;
+  background-color: #6a0025;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.qna-submit-button:hover {
+  opacity: 0.9;
+}
+
+.qna-item {
+  background-color: #e1ccd3;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 10px;
+}
+
+.qna-question {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.qna-answer {
+  color: #555;
+  margin-left: 15px;
+}
+
+/* Watch Next */
+
+.watch-next {
+  margin-bottom: 100px;
+}
+
+.watch-next h2 {
+  font-size: 1.2em;
+  color: #6a0025;
+}
+
+.watch-next-item {
+  display: flex;
+  align-items: start;
+  margin-bottom: 15px;
+}
+
+.watch-next-webinar-image {
+  width: 200px;
+  height: 130px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.watch-next-webinar-title {
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 0;
+  color: #6a0025;
+}
+
+.watch-next-webinar-speaker {
+  font-size: 14px;
+  color: #1f000b;
+  margin: 2px 0 0 0;
+}
+
+.watch-next-link {
+  display: none;
+}
 
 /* Footer */
+
 footer {
   display: none;
   @media (min-width: 600px) {

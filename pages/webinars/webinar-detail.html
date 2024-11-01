@@ -108,18 +108,27 @@
     <main>
       <!-- Webinar Video -->
       <section class="webinar-video">
+        <h1>Webinar</h1>
         <video class="webinar-video-player" controls>
           <!-- Video source-->
         </video>
         <div class="webinar-video-details">
-          <h1 class="webinar-video-title">26th Faro Webinar: 1</h1>
-          <p class="webinar-video-views">1,234 views</p>
-          <time datetime="2024-10-24" class="webinar-video-date"
-            >Oct 24, 2024</time
-          >
+          <h2 class="webinar-video-title">
+            IROS CME Webinar: Fractionation in Head & Neck and CNS malignancies;
+            Radiobiology Perspective
+          </h2>
+          <div class="webinar-videodata">
+            <p class="webinar-video-views">1,234 views</p>
+            <time datetime="2024-10-24" class="webinar-video-date"
+              >Oct 24, 2024</time
+            >
+          </div>
           <div class="webinar-video-subject">
             <a href="#" tabindex="0" class="webinar-subject-link"
               >Gynaecology</a
+            >
+            <a href="#" tabindex="0" class="webinar-subject-link"
+              >Fractionation</a
             >
           </div>
         </div>
@@ -127,39 +136,64 @@
       </section>
 
       <!-- Webinar Description -->
-      <section class="webinar-description">
-        <p class="webinar-description-text">
-          This is the webinar description. It gives an overview of the topics
-          discussed.
-        </p>
-        <button class="webinar-description-button">Read More</button>
-      </section>
-
-      <!-- Chapters -->
       <section class="chapters">
-        <h2 class="chapters-header">Chapters</h2>
-        <!-- Chapter list-->
+        <h2 class="chapter-title">Chapters</h2>
+
+        <div class="chapter-images">
+          <img
+            src="https://placehold.co/200"
+            alt="Chapter 1"
+            class="chapter-image"
+          />
+          <img
+            src="https://placehold.co/200"
+            alt="Chapter 2"
+            class="chapter-image"
+          />
+          <img
+            src="https://placehold.co/200"
+            alt="Chapter 3"
+            class="chapter-image"
+          />
+        </div>
+
+        <div class="chapter-list">
+          <label for="chapter-select">3 Chapters</label>
+          <select id="chapter-select" class="chapter-select">
+            <option value="chapter1" tabindex="0">Chapter 1</option>
+            <option value="chapter2" tabindex="0">Chapter 2</option>
+            <option value="chapter3" tabindex="0">Chapter 3</option>
+          </select>
+        </div>
       </section>
 
       <!-- About the Speaker -->
       <section class="speaker">
+        <h2 class="speaker-title">About the Speaker</h2>
+
         <div class="speaker-profile">
-          <img class="speaker-image" src="speaker.jpg" alt="Speaker Name" />
+          <img
+            class="speaker-image"
+            src="../../Assets/doctor.png"
+            alt="Speaker Name"
+          />
           <div>
             <p class="speaker-name">John Doe</p>
             <p class="speaker-role">Webinar Host</p>
           </div>
-          <a href="#" class="speaker__profile-link">See Speaker Profile</a>
+          <a href="#" class="speaker-profile-link">See Speaker Profile</a>
         </div>
       </section>
 
       <!-- Resources Section -->
       <section class="resources">
         <h2>Resources</h2>
-        <article class="resources_item">
+        <article class="resources-item">
           <div class="resources-icon">📄</div>
-          <h3 class="resources-title">Resource Title</h3>
-          <p class="resources-size">3.2 MB</p>
+          <div class="resources-details">
+            <h3 class="resources-title">Resource Title</h3>
+            <p class="resources-size">3.2 MB</p>
+          </div>
           <div class="resources-actions">
             <button class="resources-watch-button">Watch</button>
             <button class="resources-download-button">Download</button>
@@ -169,10 +203,16 @@
 
       <!-- Q&A Section -->
       <section class="qna">
-        <h2>Questions and Answers</h2>
+        <h2>Q&a</h2>
         <form class="qna-reply-bar">
           <label for="reply">Type a reply</label>
-          <input id="reply" type="text" placeholder="Type your reply..." />
+          <input
+            id="reply"
+            type="text"
+            placeholder="Type your reply..."
+            class="qna-input"
+          />
+          <button type="submit" class="qna-submit-button">Submit</button>
         </form>
         <article class="qna-item">
           <div class="qna-question">
@@ -190,16 +230,41 @@
         <article class="watch-next-item">
           <img
             class="watch-next-webinar-image"
-            src="webinar.jpg"
-            alt="webinar Name"
+            src="https://placehold.co/100"
+            alt="Webinar Name"
           />
-          <div>
-            <p class="watch-next-webinar-titel"></p>
+          <div class="watch-next-details">
+            <p class="watch-next-webinar-title">Webinar 1</p>
             <p class="watch-next-webinar-speaker">John Doe</p>
           </div>
-          <a href="#">Suggested Webinar 1</a>
+          <a href="#" class="watch-next-link">Watch Now</a>
+        </article>
+        <article class="watch-next-item">
+          <img
+            class="watch-next-webinar-image"
+            src="https://placehold.co/100"
+            alt="Webinar Name"
+          />
+          <div class="watch-next-details">
+            <p class="watch-next-webinar-title">Webinar 2</p>
+            <p class="watch-next-webinar-speaker">John Doe</p>
+          </div>
+          <a href="#" class="watch-next-link">Watch Now</a>
+        </article>
+        <article class="watch-next-item">
+          <img
+            class="watch-next-webinar-image"
+            src="https://placehold.co/100"
+            alt="Webinar Name"
+          />
+          <div class="watch-next-details">
+            <p class="watch-next-webinar-title">Webinar 3</p>
+            <p class="watch-next-webinar-speaker">John Doe</p>
+          </div>
+          <a href="#" class="watch-next-link">Watch Now</a>
         </article>
       </section>
+
       <!-- Footer -->
       <footer>
         <a>© 2024 - Antoni van Leeuwenhoek</a>
