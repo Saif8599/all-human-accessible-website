@@ -8,6 +8,31 @@ body {
   }
 }
 
+main {
+  margin: 0px 17px;
+  @media (min-width: 600px) {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 50px;
+    margin: 0 5vw;
+  }
+}
+
+/* Main content: 70% ruimte */
+.main-content {
+  @media (min-width: 600px) {
+    flex: 0 0 70%;
+  }
+}
+
+/* Side content: 30% ruimte */
+.side-content {
+  @media (min-width: 600px) {
+    flex: 0 0 30%;
+    margin-top: 80px;
+    }
+}
+
 /* Navbar */
 
 nav {
@@ -115,12 +140,18 @@ nav ul li {
   font-size: 2em;
   color: #1f000b;
   margin-bottom: 30px;
+  @media (min-width: 600px) {
+  display: none;
+  }
 }
 
 .webinar-video-player {
   width: 100%;
-  height: 200px;
+  height: auto;
   border-radius: 5px;
+  @media (min-width: 600px) {
+    margin-top: 60px;
+    }
 }
 .webinar-video-title {
   font-size: 1.2em;
@@ -181,6 +212,9 @@ nav ul li {
 
 .chapters {
   margin-bottom: 15px;
+  @media (min-width: 600px) {
+    max-width: 65%;
+  }
 }
 
 .chapter-title {
@@ -257,6 +291,9 @@ nav ul li {
 
 .resources {
   margin-bottom: 15px;
+  @media (min-width: 600px) {
+    margin-bottom: 200px;
+  }
 }
 
 .resources h2 {
@@ -327,6 +364,10 @@ nav ul li {
 
 .qna {
   margin-bottom: 15px;
+  @media (min-width: 600px) {
+    flex: 1;
+    max-width: 50%;
+  }
 }
 
 .qna h2 {
@@ -391,6 +432,10 @@ nav ul li {
 
 .watch-next {
   margin-bottom: 100px;
+  @media (min-width: 600px) {
+    flex: 1;
+    max-width: 50%;
+  }
 }
 
 .watch-next h2 {

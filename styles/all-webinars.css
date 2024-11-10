@@ -8,6 +8,13 @@ body {
   }
 }
 
+main {
+  margin: 0px 17px;
+  @media (min-width: 600px) {
+    margin: 0 5vw;
+  }
+}
+
 /* Navbar */
 
 nav {
@@ -107,13 +114,6 @@ nav ul li {
 }
 
 /* Search Functon */
-
-main {
-  margin: 0px 17px;
-  @media (min-width: 600px) {
-    margin: 0 5vw;
-  }
-}
 
 .search-function h1 {
   font-size: 2em;
